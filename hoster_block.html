@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="yandex-verification" content="a12946c03c70f736" />
+        <meta name="description" content="Массаж с выездом на дом"> 
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="main.css"/>
+        <script type="text/javascript" src="src/lib/React/react.dev.js"></script>
+        <script type="text/javascript" src="src/lib/React/react-dom.dev.js"></script>
+        <script type="text/javascript" src="src/lib/React/babel.js"></script>
+        <script type="text/javascript" src="src/lib/jQuery/jQuery.js"></script>
+        <link rel="shortcut icon" href="src/image/1.png" type="image/png">
+        <title>FOUR HANDS Массаж</title>
+    </head>
+    <body vlink="white" alink="white" link="white" onload="Load()">
+        <div id="root"></div>
+        <script type="text/babel">
+            class Header extends React.Component {
+                Create(){
+                    const mainD = <div className="mainD">
+                            <p><img id="one" src="src/image/zeromain1.jpg"/></p>
+                            <p><img id="one" src="src/image/onemain.jpg"/></p>
+                            <p><img id="one" src="src/image/twomain.jpg"/></p>
+                            <p><img id="two" src="src/image/threemain.jpg"/></p>
+                            <p><img id="two" src="src/image/fourmain.jpg"/></p>
+                            <p><img id="one" src="src/image/fivemain.jpg"/></p>
+                            <p><img id="one" src="src/image/sixmain.jpg"/></p>
+                            <p><img id="one" src="src/image/sevenmain1.jpg"/></p>
+                        </div>;
+                    const titleText = <div className="titleText">
+                        <h1>FOUR HANDS massage</h1>
+                        <h2>Классический массаж, антицеллюлитные виды</h2>
+                        <h2>массажа в Нижнем Новгороде</h2>
+                        <h2>Выезд на дом</h2>
+                        <h2>8-950-366-27-38</h2>
+                        </div>;
+                    const hdiv = <div>
+                            {mainD}
+                            {titleText}
+                        </div>;
+                    return <header>{hdiv}<hr color="lightgreen" size="1"/></header>;
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            class Main extends React.Component{
+                Create(){
+                    const mainText = <div className="mainText">
+                            <h1>Семейная пара предлагает Вам услуги оздоровительного классического массажа всех зон, 
+                                услуги антицеллюлитного массажа. Услуги оказываем с выездом к Вам. Гарантируем Вам комфорт 
+                                и качество выполнения заказанной услуги. Всё необходимое для массажа, включая удобный стол, 
+                                мы привезем с собой. Обязательный контроль противопоказаний.</h1>
+                            <h1>Сертификаты:</h1>
+                        </div>;
+                    const sertificat = <div className="sertificat">
+                            <img src="src/image/Julia.jpg" alt=""/>
+                            <img src="src/image/Medbooks.jpg" alt=""/>
+                            <img src="src/image/Sergei.jpg" alt=""/>
+                        </div>;
+
+                    const ourUs = <h1>Наши услуги</h1>
+                    const childP1 = <div className="childP1">
+                            <p><img src="src/image/zeromain1.jpg" alt=""/></p>
+                            <h3><b>Массаж общий в четыре руки</b></h3>
+                            <p>Услуга включает в себя 5 видов массажа: спины, рук, ног, грудной клетки и живота. 
+                                Более подробно о каждом виде массажа смотрите в наших услугах. Данный массаж осуществляется 
+                                двумя мастерами одновременно, что позволяет проработать все зоны, сократив время массажа вдвое.<br/>
+                                <b>Показания к массажу:</b> заболевания сердечно-сосудистой системы, заболевания органов дыхания, 
+                                травмы и заболевания опорно-двигательного аппарата, заболевания нервной системы, заболевания 
+                                органов пищеварения (вне фазы обострения), заболевания мужских и женских половых органов, 
+                                нарушение обмена веществ.</p>
+                            <p><b>Цена 2500 руб.</b></p>
+                        </div>;
+                    const childP2 = <div className="childP2">
+                            <p><img src="src/image/twomain.jpg" alt=""/></p>
+                            <h3><b>Массаж шейно-воротниковой зоны</b></h3>
+                            <p>Услуга включает в себя массаж шеи, плечевой зоны, плечевых суставов, окололопаточной зоны, 
+                                околопозвоночной зоны. Осуществляется с использованием массажного масла. <br/>
+                                <b>Показания к массажу:</b> нарушение подвижности в области шеи, рук, хроническая усталость, 
+                                малоподвижный образ жизни, перепады артериального давления, головные боли неизвестного 
+                                происхождения, эмоциональная нестабильность.</p>
+                            <p><b>Цена 500 руб.</b></p>
+                        </div>;
+                    const childP3 = <div className="childP3">
+                            <p><img src="src/image/sevenmain1.jpg" alt=""/></p>
+                            <h3><b>Массаж рук</b></h3>
+                            <p>Услуга включает в себя массаж рук от кончиков пальцев до плечевого сустава с 
+                                проработкой всех суставов и пассивной гимнастикой. Осуществляется с использованием 
+                                массажного масла. <br/>
+                                <b>Показания к массажу:</b> нарушение подвижности суставов рук, артриты, утреннее анемение рук, 
+                                артроз, усталость рук, малоподвижный образ жизни.</p>
+                            <p><b>Цена 500 руб.</b></p>
+                        </div>;
+                    const childP4 = <div className="childP4">
+                            <p><img src="src/image/fourmain.jpg" alt=""/></p>
+                            <h3><b>Массаж головы</b></h3>
+                            <p>Услуга включает в себя массаж волосистой части головы. Осуществляется без использования 
+                                массажного масла. <br/>
+                                <b>Показания к массажу:</b> выпадение волос, облысение.</p>
+                            <p><b>Цена 500 руб.</b></p>
+                        </div>;
+                    const panel1 = <div className="panel1">
+                            {childP1}
+                            {childP2}
+                            {childP3}
+                            {childP4}
+                        </div>;
+
+                    const childP5 = <div className="childP5">
+                            <p><img src="src/image/threemain.jpg" alt=""/></p>
+                            <h3><b>Массаж лица</b></h3>
+                            <p>Услуга включает в себя массаж шеи, подбородка, носогубной части лица, щек, зоны около глаз, 
+                                лба, носа. Осуществляется без использования массажного масла. <br/>
+                                <b>Показания к массажу:</b> старение кожи, ухудшение цвета лица, пигментация, сосудистая сетка, 
+                                отеки, шрамы.
+                                Особые противопоказания: наличие в лице протезов, филлеров, ботокса, гиалуроновой кислоты, 
+                                заболевания щитовидной железы.</p>
+                            <p><b>Цена 500 руб.</b></p>
+                        </div>;
+                    const childP6 = <div className="childP6">
+                            <p><img src="src/image/fivemain.jpg" alt=""/></p>
+                            <h3><b>Массаж ног</b></h3>
+                            <p>Услуга включает в себя массаж ног от кончиков пальцев до тазобедренного сустава с 
+                                проработкой всех суставов и пассивной гимнастикой. Осуществляется с 
+                                использованием массажного масла. <br/>
+                                <b>Показания к массажу:</b> нарушение подвижности суставов ног, артриты, утреннее анемение ног, 
+                                артроз, усталость ног, малоподвижный образ жизни, остеохондроз поясничного отдела, отечность ног.</p>
+                            <p><b>Цена 700 руб.</b></p>
+                        </div>;
+                    const childP7 = <div className="childP7">
+                            <p><img src="src/image/onemain.jpg" alt=""/></p>
+                            <h3><b>Массаж спины</b></h3>
+                            <p>Услуга включает в себя массаж шейно-воротниковой зоны, грудной клетки, поясничной зоны, 
+                                крестцовой зоны. Осуществляется с использованием массажного масла. <br/>
+                                <b>Показания к массажу:</b> остеохондроз, нарушение подвижности верхних и нижних конечностей, их 
+                                частичное онемение, нарушение подвижности области шеи.</p>
+                            <p><b>Цена 800 руб.</b></p>
+                        </div>;
+                    const childP8 = <div className="childP8">
+                            <p><img src="src/image/sixmain.jpg" alt=""/></p>
+                            <h3><b>Антицеллюлитный массаж</b></h3>
+                            <p>Услуга включает в себя один из трех видов массажа: антицеллюлитный массаж с использованием 
+                                массажного крема, лимфодреннажный массаж, медовый массаж с натуральным медом, вакуумный массаж 
+                                баночками. <br/>
+                                <b>Показания к массажу:</b> лишний вес, отечность, целлюлит.</p>
+                            <p><b>Цена 800 руб.</b></p>
+                        </div>;
+                    const panel2 = <div className="panel2">
+                            {childP5}
+                            {childP6}
+                            {childP7}
+                            {childP8}
+                        </div>;
+                    const finalText = <div className="finalText">
+                            <p><b>Противопоказания к массажу:</b> болезни крови, туберкулез, гангрена, тромбоз, аневризмы сосудов, 
+                                сифилис, хронический остеомиелит, психические заболевания, злокачественные и доброкачественные 
+                                опухоли, сердечная, почечная недостаточность, острые лихорадочные состояния, 
+                                острые воспалительные процессы, кровотечение, гнойные процессы любой локализации, 
+                                варикозные расширения вен, воспаление лимфатических узлов, нестерпимые боли после травмы, 
+                                кризы при повышенном и пониженном артериальном давлении, боли невыясненного характера, тошнота, 
+                                рвота.</p>                        
+                        </div>;
+                    const mdiv = <div className="mdiv">
+                            {mainText}
+                            {sertificat}
+                            <hr color="lightgreen" size="1"/>
+                            {ourUs}
+                            {panel1}
+                            <hr color="lightgreen" size="1"/>
+                            {panel2}
+                            <hr color="lightgreen" size="1"/>
+                            {finalText}
+                            <hr color="silver" size="1"/>
+                        </div>;
+                    return <main>{mdiv}</main>;
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            class Footer extends React.Component {
+                Create(){
+                    const oneFoot = <div className="oneFoot">
+                            <p>Copyright © 2020</p>
+                            <p><a href="Policy.html" target="_blank">Политика конфиденциальности</a></p>
+                        </div>;
+                    const twoFoot = <div className="twoFoot">
+                            <p><b>Контакты: Нижний Новгород</b></p>
+                            <p>Телефон: 8-950-366-27-38</p>
+                            <p>E-mail: JMatyushina@mail.ru</p>
+                        </div>;
+                    const fdiv = <div className="fdiv">
+                            {oneFoot}
+                            {twoFoot}
+                        </div>;
+                    return <footer>{fdiv}</footer>;
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            ReactDOM.render(
+                <div><Header/><Main/><Footer/></div>,
+                document.getElementById("root")
+            )
+        </script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

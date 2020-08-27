@@ -1,0 +1,149 @@
+body{
+    background-color: rosybrown;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover { opacity: 0.5; }
+
+header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > div {
+    display: flex;
+}
+
+header > div > .titleText{
+    color: white;
+    font-size: 130%;
+    text-align: right;
+    font-style: italic;
+}
+
+header > div > .mainD{
+    margin: auto;
+    width: 30%;
+    height: 35vh;
+    overflow-y: hidden;
+}
+
+header > div > .mainD > p{
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+header > div > .mainD > p > img{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*main*/
+
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > div > h1 {
+    color: white;
+    font-style: italic;
+}
+
+.mainText > h1 {
+    color: white;
+    font-style: italic;
+    font-size: 160%;
+}
+
+.sertificat {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.sertificat > img {
+    width: 20%;
+    margin-right: 2%;
+}
+
+.panel1, .panel2 {
+    display: flex;
+}
+
+.childP1, .childP2, .childP3, .childP4, .childP5, .childP6, .childP7, .childP8 {
+    margin: auto;
+    margin-top: 0;
+    width: 20%;
+}
+
+.childP1 > p > img, .childP2 > p > img, .childP3 > p > img, .childP4 > p > img, .childP5 > p > img, .childP6 > p > img, 
+.childP7 > p > img, .childP8 > p > img{
+    width: 100%;
+}
+
+.childP1 > h3, .childP2 > h3, .childP3 > h3, .childP4 > h3, .childP5 > h3, .childP6 > h3, .childP7 > h3, .childP8 > h3 {
+    color: white;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.childP1 > p, .childP2 > p, .childP3 > p, .childP4 > p, .childP5 > p, .childP6 > p, .childP7 > p, .childP8 > p {
+    color: white;
+    font-style: italic;
+    font-size: 130%;
+    text-align: justify;
+}
+
+.finalText {
+    color: white;
+    font-style: italic;
+    font-size: 130%;
+}
+
+/*footer*/
+
+footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fdiv {
+    display: flex;
+}
+
+.oneFoot {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.oneFoot > p {
+    margin: auto;
+    color: white;
+    font-size: 120%;
+    font-style: italic;
+}
+
+.twoFoot {
+    margin-top: 0;
+    width: 50%;
+    text-align: right;
+}
+
+.twoFoot > p {
+    color: white;
+    font-size: 120%;
+    font-style: italic;
+    margin-top: 0;
+}
